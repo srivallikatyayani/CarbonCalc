@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --color-space-900: #050510;
+  --color-space-800: #0A0A1A;
+  --color-eco-primary: #10B981;
+  --color-eco-hover: #059669;
+  --color-warn-orange: #F59E0B;
+  --color-warn-red: #E11D48;
+}
+
+:root {
+  --background: #050510;
+  --foreground: #ffffff;
+}
+
+body {
+  color: var(--foreground);
+  background-color: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden; /* Prevent scrolling for the full HUD feel */
+}
+
+/* Glassmorphism utilities */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(16, 185, 129, 0.15); /* Subtle eco glow */
+}
+
+/* Custom scrollbar for inner panels if needed */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}

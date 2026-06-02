@@ -1,0 +1,28 @@
+# ── Web Framework ─────────────────────────────────────────────────────────────
+fastapi
+uvicorn[standard]
+
+# ── Database ──────────────────────────────────────────────────────────────────
+sqlalchemy
+psycopg2-binary
+
+# ── Validation & Configuration ────────────────────────────────────────────────
+pydantic[email]          # [email] installs email-validator for EmailStr
+python-dotenv
+python-multipart
+
+# ── Security ──────────────────────────────────────────────────────────────────
+passlib[bcrypt]          # Password hashing — never store plaintext passwords
+
+# ── AI / LLM (future phases) ──────────────────────────────────────────────────
+langgraph
+langchain
+
+# ── ML (future phases) ────────────────────────────────────────────────────────
+pandas
+numpy
+scikit-learn
+xgboost
+
+# ── Vector DB (future phases) ─────────────────────────────────────────────────
+chromadb
