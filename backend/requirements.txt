@@ -25,4 +25,7 @@ scikit-learn
 xgboost
 
 # ── Vector DB (future phases) ─────────────────────────────────────────────────
-chromadb
+chromadb
+
+
+gunicorn
